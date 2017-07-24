@@ -1,0 +1,23 @@
+<div id="team">
+  <div class="container text-center">
+    <h1>Our Team</h1>
+
+    <!-- Team members -->
+    <ul class="list-inline">
+      <% %w(anne romain seb).each do |person| %>
+        <li>
+          <h3><%= person.capitalize %></h3>
+          <%= image_tag "#{person}.jpg", class: "img-circle", width: "100px" %>
+        </li>
+      <% end %>
+    </ul>
+
+    <!-- contact -->
+    <h3 class= "padded">
+      <% link_to "press.html" do %>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        contact@lewagon.com
+      <% end %>
+    </h3>
+  </div>
+</div>
